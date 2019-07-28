@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.EstadisticasGobiernoController">
+   <children>
+      <Button layoutX="1032.0" layoutY="72.0" mnemonicParsing="false" onMouseClicked="#consultasVotoXVoto" stylesheets="@../Resourses/Css/welcome.css" text="Actualizar" />
+      <ImageView fx:id="imagen1" fitHeight="87.0" fitWidth="86.0" layoutX="101.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="nombre1" layoutX="75.0" layoutY="266.0" text="label" />
+      <Label fx:id="votos1" layoutX="75.0" layoutY="304.0" text="label" />
+      <ImageView fx:id="imagen2" fitHeight="93.0" fitWidth="86.0" layoutX="309.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="nombre2" layoutX="281.0" layoutY="266.0" text="Label" />
+      <Label fx:id="votos2" layoutX="281.0" layoutY="304.0" text="Label" />
+      <ImageView fx:id="imagen3" fitHeight="93.0" fitWidth="86.0" layoutX="532.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="nombre3" layoutX="504.0" layoutY="274.0" text="Label" />
+      <Label fx:id="votos3" layoutX="504.0" layoutY="312.0" text="Label" />
+      <ImageView fx:id="imagen4" fitHeight="93.0" fitWidth="86.0" layoutX="754.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="nombre4" layoutX="726.0" layoutY="273.0" text="Label" />
+      <Label fx:id="votos4" layoutX="726.0" layoutY="311.0" text="Label" />
+      <ImageView fx:id="imagen5" fitHeight="93.0" fitWidth="79.0" layoutX="973.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="nombre5" layoutX="945.0" layoutY="273.0" text="Label" />
+      <Label fx:id="votos5" layoutX="945.0" layoutY="311.0" text="Label" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="500.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resourses/Imagenes/LOGO.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="47.0" fitWidth="79.0" layoutX="41.0" layoutY="58.0" onMouseClicked="#RegresarLogin" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resourses/Imagenes/REGRESAR.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="680.0" prefWidth="672.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.BoletaController">
+   <children>
+      <ImageView fitHeight="75.0" fitWidth="190.0" layoutX="261.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resourses/Imagenes/LOGO.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="541.0" layoutY="15.0" mnemonicParsing="false" onAction="#extraer" prefHeight="33.0" prefWidth="117.0" stylesheets="@../Resourses/Css/welcome.css" text="Presidente" />
+      <TabPane layoutY="93.0" prefHeight="574.0" prefWidth="672.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab closable="false" style="-fx-font-family: Futura Md BT; -fx-font-size: 14; -fx-text-fill: #595AA0;" text="Presidente de La Republica">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="580.0" prefWidth="672.0">
+                     <children>
+                        <ImageView fx:id="imagen1" fitHeight="66.0" fitWidth="66.0" layoutX="14.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="imagen2" fitHeight="66.0" fitWidth="66.0" layoutX="14.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="imagen3" fitHeight="66.0" fitWidth="66.0" layoutX="14.0" layoutY="224.0" pickOnBounds="true" preserveRatio="true" />
+                        <BorderPane layoutX="14.0" layoutY="122.0" onMouseClicked="#VotarCandidatoFederal1" prefHeight="66.0" prefWidth="66.0" style="-fx-border-color: black; -fx-border-width: 2;" />
+                        <BorderPane layoutX="14.0" layoutY="224.0" onMouseClicked="#VotarCandidatoFederal2" prefHeight="66.0" prefWidth="66.0" style="-fx-border-color: black; -fx-border-width: 2;" />
+                        <BorderPane layoutX="14.0" layoutY="327.0" prefHeight="66.0" prefWidth="66.0" style="-fx-border-color: black; -fx-border-width: 2;">
+                           <center>
+                              <ImageView fx:id="imagen4" fitHeight="66.0" fitWidth="66.0" onMouseClicked="#VotarCandidatoFederal2" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+                           </center></BorderPane>
+                        <BorderPane layoutX="14.0" layoutY="440.0" prefHeight="66.0" prefWidth="66.0" style="-fx-border-color: black; -fx-border-width: 2;">
+                           <center>
+                              <ImageView fx:id="imagen5" fitHeight="66.0" fitWidth="66.0" onMouseClicked="#VotarCandidatoFederal3" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+                           </center></BorderPane>
+                        <BorderPane layoutX="14.0" layoutY="30.0" onMouseClicked="#VotarCandidatoFederal1" prefHeight="66.0" prefWidth="66.0" style="-fx-border-color: black; -fx-border-width: 2;" />
+                        <BorderPane layoutX="325.0" layoutY="22.0" prefHeight="66.0" prefWidth="66.0" style="-fx-border-color: black; -fx-border-width: 2;">
+                           <center>
+                              <ImageView fx:id="imagen6" fitHeight="66.0" fitWidth="66.0" onMouseClicked="#VotarCandidatoFederal4" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+                           </center></BorderPane>
+                        <BorderPane layoutX="325.0" layoutY="123.0" prefHeight="66.0" prefWidth="66.0" style="-fx-border-color: black; -fx-border-width: 2;">
+                           <right>
+                              <ImageView fx:id="imagen7" fitHeight="66.0" fitWidth="66.0" onMouseClicked="#VotarCandidatoFederal3" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+                           </right></BorderPane>
+                        <BorderPane layoutX="325.0" layoutY="224.0" prefHeight="66.0" prefWidth="66.0" style="-fx-border-color: black; -fx-border-width: 2;">
+                           <center>
+                              <ImageView fx:id="imagen8" fitHeight="66.0" fitWidth="66.0" onMouseClicked="#VotarCandidatoFederal1" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+                           </center></BorderPane>
+                        <BorderPane layoutX="325.0" layoutY="328.0" prefHeight="66.0" prefWidth="66.0" style="-fx-border-color: black; -fx-border-width: 2;">
+                           <center>
+                              <ImageView fx:id="imagen9" fitHeight="66.0" fitWidth="66.0" onMouseClicked="#VotarCandidatoFederal2" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+                           </center></BorderPane>
+                        <BorderPane layoutX="325.0" layoutY="440.0" prefHeight="66.0" prefWidth="66.0" style="-fx-border-color: black; -fx-border-width: 2;">
+                           <center>
+                              <ImageView fx:id="imagen10" fitHeight="66.0" fitWidth="66.0" onMouseClicked="#VotarCandidatoFederal3" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+                           </center></BorderPane>
+                        <Label fx:id="nombre1" layoutX="92.0" layoutY="56.0" prefHeight="17.0" prefWidth="200.0" textAlignment="JUSTIFY" textOverrun="CENTER_WORD_ELLIPSIS">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="nombre2" layoutX="99.0" layoutY="147.0" prefHeight="17.0" prefWidth="200.0" textAlignment="JUSTIFY" textOverrun="CENTER_WORD_ELLIPSIS">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="nombre3" layoutX="99.0" layoutY="249.0" prefHeight="17.0" prefWidth="200.0" textAlignment="JUSTIFY" textOverrun="CENTER_WORD_ELLIPSIS">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="nombre4" layoutX="99.0" layoutY="352.0" prefHeight="17.0" prefWidth="200.0" textAlignment="JUSTIFY" textOverrun="CENTER_WORD_ELLIPSIS">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="nombre5" layoutX="99.0" layoutY="465.0" prefHeight="17.0" prefWidth="200.0" textAlignment="JUSTIFY" textOverrun="CENTER_WORD_ELLIPSIS">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="nombre6" layoutX="405.0" layoutY="47.0" prefHeight="17.0" prefWidth="230.0" textAlignment="JUSTIFY" textOverrun="CENTER_WORD_ELLIPSIS">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="nombre7" layoutX="405.0" layoutY="148.0" prefHeight="17.0" prefWidth="230.0" textAlignment="JUSTIFY" textOverrun="CENTER_WORD_ELLIPSIS">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="nombre8" layoutX="405.0" layoutY="249.0" prefHeight="17.0" prefWidth="230.0" textAlignment="JUSTIFY" textOverrun="CENTER_WORD_ELLIPSIS">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="nombre9" layoutX="405.0" layoutY="353.0" prefHeight="17.0" prefWidth="230.0" textAlignment="JUSTIFY" textOverrun="CENTER_WORD_ELLIPSIS">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="nombre10" layoutX="409.0" layoutY="474.0" prefHeight="17.0" prefWidth="250.0" textAlignment="JUSTIFY" textOverrun="CENTER_WORD_ELLIPSIS">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Button layoutX="534.0" layoutY="513.0" mnemonicParsing="false" onMouseClicked="#mostrarVentanaEstadisticas" stylesheets="@../Resourses/Css/welcome.css" text="Ver estadisticas" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab style="-fx-font-family: Futura Md BT; -fx-font-size: 14;" text="Gobernadores">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="GobNombre1" layoutX="126.0" layoutY="72.0" prefHeight="17.0" prefWidth="200.0" />
+                        <Label fx:id="GobNombre2" layoutX="126.0" layoutY="183.0" prefHeight="17.0" prefWidth="200.0" />
+                        <Label fx:id="GobNombre3" layoutX="126.0" layoutY="286.0" prefHeight="17.0" prefWidth="200.0" />
+                        <Label fx:id="GobNombre6" layoutX="430.0" layoutY="63.0" prefHeight="17.0" prefWidth="200.0" />
+                        <Label fx:id="GobNombre5" layoutX="126.0" layoutY="478.0" prefHeight="17.0" prefWidth="200.0" />
+                        <Label fx:id="GobNombre4" layoutX="126.0" layoutY="378.0" prefHeight="17.0" prefWidth="200.0" />
+                        <BorderPane layoutX="39.0" layoutY="36.0" onMouseClicked="#VotarCandidatoEstatal" prefHeight="66.0" prefWidth="66.0" style="-fx-border-color: black; -fx-border-width: 2;">
+                           <center>
+                              <ImageView fx:id="Gobimagen1" fitHeight="66.0" fitWidth="66.0" onMouseClicked="#VotarCandidatoEstatal1" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                        <BorderPane layoutX="39.0" layoutY="148.0" onMouseClicked="#VotarCandidatoEstatal" prefHeight="66.0" prefWidth="66.0" style="-fx-border-color: black; -fx-border-width: 2;">
+                           <center>
+                              <ImageView fx:id="Gobimagen2" fitHeight="66.0" fitWidth="66.0" onMouseClicked="#VotarCandidatoEstatal1" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                        <BorderPane layoutX="39.0" layoutY="250.0" onMouseClicked="#VotarCandidatoEstatal" prefHeight="66.0" prefWidth="66.0" style="-fx-border-color: black; -fx-border-width: 2;">
+                           <center>
+                              <ImageView fx:id="Gobimagen3" fitHeight="66.0" fitWidth="66.0" onMouseClicked="#VotarCandidatoEstatal2" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                        <BorderPane layoutX="342.0" layoutY="36.0" onMouseClicked="#VotarCandidatoEstatal" prefHeight="66.0" prefWidth="66.0" style="-fx-border-color: black; -fx-border-width: 2;">
+                           <right>
+                              <ImageView fx:id="Gobimagen6" fitHeight="66.0" fitWidth="66.0" onMouseClicked="#VotarCandidatoEstatal4" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+                           </right>
+                        </BorderPane>
+                        <BorderPane layoutX="340.0" layoutY="149.0" onMouseClicked="#VotarCandidatoEstatal" prefHeight="66.0" prefWidth="66.0" style="-fx-border-color: black; -fx-border-width: 2;">
+                           <center>
+                              <ImageView fx:id="Gobimagen7" fitHeight="66.0" fitWidth="66.0" onMouseClicked="#VotarCandidatoEstatal4" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                        <BorderPane layoutX="39.0" layoutY="454.0" onMouseClicked="#VotarCandidatoEstatal" prefHeight="66.0" prefWidth="66.0" style="-fx-border-color: black; -fx-border-width: 2;">
+                           <center>
+                              <ImageView fx:id="Gobimagen5" fitHeight="66.0" fitWidth="66.0" onMouseClicked="#VotarCandidatoEstatal3" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                        <BorderPane layoutX="39.0" layoutY="349.0" onMouseClicked="#VotarCandidatoEstatal" prefHeight="66.0" prefWidth="66.0" style="-fx-border-color: black; -fx-border-width: 2;">
+                           <center>
+                              <ImageView fx:id="Gobimagen4" fitHeight="66.0" fitWidth="66.0" onMouseClicked="#VotarCandidatoEstatal2" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                        <Label fx:id="GobNombre7" layoutX="430.0" layoutY="175.0" prefHeight="17.0" prefWidth="200.0" />
+                        <BorderPane layoutX="342.0" layoutY="253.0" onMouseClicked="#VotarCandidatoEstatal" prefHeight="66.0" prefWidth="66.0" style="-fx-border-color: black; -fx-border-width: 2;">
+                           <center>
+                              <ImageView fx:id="Gobimagen8" fitHeight="66.0" fitWidth="66.0" onMouseClicked="#VotarCandidatoEstatal5" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+                           </center></BorderPane>
+                        <BorderPane layoutX="342.0" layoutY="352.0" onMouseClicked="#VotarCandidatoEstatal" prefHeight="66.0" prefWidth="66.0" style="-fx-border-color: black; -fx-border-width: 2;">
+                           <center>
+                              <ImageView fx:id="Gobimagen9" fitHeight="66.0" fitWidth="66.0" onMouseClicked="#VotarCandidatoEstatal5" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+                           </center></BorderPane>
+                        <BorderPane layoutX="342.0" layoutY="454.0" onMouseClicked="#VotarCandidatoEstatal" prefHeight="66.0" prefWidth="66.0" style="-fx-border-color: black; -fx-border-width: 2;">
+                           <center>
+                              <ImageView fx:id="Gobimagen10" fitHeight="66.0" fitWidth="66.0" onMouseClicked="#VotarCandidatoEstatal5" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+                           </center></BorderPane>
+                        <Label fx:id="GobNombre8" layoutX="430.0" layoutY="278.0" prefHeight="17.0" prefWidth="200.0" />
+                        <Label fx:id="GobNombre9" layoutX="430.0" layoutY="376.0" prefHeight="17.0" prefWidth="200.0" />
+                        <Label fx:id="GobNombre10" layoutX="430.0" layoutY="478.0" prefHeight="17.0" prefWidth="200.0" />
+                        <Button layoutX="534.0" layoutY="508.0" mnemonicParsing="false" onMouseClicked="#mostrarVentanaEstadisticasGob" stylesheets="@../Resourses/Css/welcome.css" text="Ver estadisticas" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <ImageView fitHeight="53.0" fitWidth="56.0" layoutX="14.0" layoutY="18.0" onMouseClicked="#RegresarLogin" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resourses/Imagenes/REGRESAR.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="541.0" layoutY="52.0" mnemonicParsing="false" onMouseClicked="#extraerdos" stylesheets="@../Resourses/Css/welcome.css" text="Gobernadores" />
+      <Label fx:id="nombreCiudadano" layoutX="76.0" layoutY="15.0" prefHeight="29.0" prefWidth="200.0" textFill="#a83131">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

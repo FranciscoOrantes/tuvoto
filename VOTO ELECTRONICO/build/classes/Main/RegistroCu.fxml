@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="608.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.RegistroCuController">
+   <children>
+      <Button layoutX="124.0" layoutY="113.0" mnemonicParsing="false" onAction="#LimpiarRegistros" prefHeight="32.0" prefWidth="172.0" stylesheets="@../Resourses/Css/welcome.css" text="Nuevo" />
+      <Button layoutX="301.0" layoutY="113.0" mnemonicParsing="false" onAction="#RegresarLogin" prefHeight="32.0" prefWidth="172.0" stylesheets="@../Resourses/Css/welcome.css" text="Login" />
+      <TextField fx:id="tfNombres" layoutX="127.0" layoutY="168.0" promptText="Nombres" stylesheets="@../Resourses/Css/textfield.css" />
+      <TextField fx:id="tfApellidoPaterno" layoutX="127.0" layoutY="217.0" promptText="Apellido Paterno" stylesheets="@../Resourses/Css/textfield.css" />
+      <TextField fx:id="tfApellidoMaterno" layoutX="127.0" layoutY="262.0" promptText="Apellido Materno" stylesheets="@../Resourses/Css/textfield.css" />
+      <TextField fx:id="tfEntidad" layoutX="295.0" layoutY="217.0" prefHeight="25.0" prefWidth="184.0" promptText="Entidad" stylesheets="@../Resourses/Css/textfield.css" />
+      <TextField fx:id="tfClave" layoutX="127.0" layoutY="307.0" prefHeight="25.0" prefWidth="351.0" promptText="Clave Electoral" stylesheets="@../Resourses/Css/textfield.css" />
+      <TextField fx:id="tfDia" layoutX="290.0" layoutY="168.0" prefHeight="25.0" prefWidth="57.0" promptText="Dia" stylesheets="@../Resourses/Css/textfield.css" />
+      <TextField fx:id="tfMes" layoutX="355.0" layoutY="168.0" prefHeight="25.0" prefWidth="57.0" promptText="Mes" stylesheets="@../Resourses/Css/textfield.css" />
+      <TextField fx:id="tfAño" layoutX="422.0" layoutY="168.0" prefHeight="25.0" prefWidth="57.0" promptText="Año" stylesheets="@../Resourses/Css/textfield.css" />
+      <TextField fx:id="tfCurp" layoutX="295.0" layoutY="262.0" prefHeight="25.0" prefWidth="184.0" promptText="Curp" stylesheets="@../Resourses/Css/textfield.css" />
+      <Button layoutX="123.0" layoutY="405.0" mnemonicParsing="false" onAction="#registrar" onMouseClicked="#registrar" onMousePressed="#registrar" prefHeight="54.0" prefWidth="362.0" stylesheets="@../Resourses/Css/welcome.css" text="Registrar Credencial" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="204.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resourses/Imagenes/LOGO.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="67.0" fitWidth="63.0" layoutX="37.0" layoutY="32.0" onMouseClicked="#RegresarVentanaAdministrador" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resourses/Imagenes/REGRESAR.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="tfCorreo" layoutX="127.0" layoutY="349.0" prefHeight="25.0" prefWidth="351.0" promptText="Correo Electronico" stylesheets="@../../../../Documents/NetBeansProjects/VOTO%20ELECTRONICO/src/Resourses/Css/textfield.css" />
+   </children>
+</Pane>

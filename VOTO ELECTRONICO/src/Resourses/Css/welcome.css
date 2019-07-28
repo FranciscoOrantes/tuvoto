@@ -1,0 +1,14 @@
+.button {
+    -fx-text-fill: white;
+    -fx-font-family: "Roboto";
+    -fx-font-size: 15;
+   -fx-background-radius:0;
+   -fx-alignment:center;
+-fx-border-color:white;
+ 
+    -fx-background-color: linear-gradient(#3C4DAC, #3C4DAC);
+
+}
+.button:hover {
+    -fx-background-color: linear-gradient(#61459B, #61459B);
+}
